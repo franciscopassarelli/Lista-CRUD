@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    
+    <style>
+        body{
+            color: #000;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+    
+
+        .container {
+            text-align: center;
+            max-width: 400px; /* Ajusta el ancho máximo según tus necesidades */
+            margin: auto;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        div {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        input {
+            padding: 5px;
+        }
+
+        button {
+            padding: 5px 10px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            max-height: 300px; /* Ajusta la altura máxima según tus necesidades */
+            overflow-y: auto; /* Añade un desplazamiento vertical si es necesario */
+            border: 1px solid #ccc; /* Añade un borde para visualizar el área de la lista */
+            border-radius: 5px;
+        }
+
+        li {
+            margin: 5px 0;
+            background-color: #fff;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+
+
+    </style>
+    <title>Lista de personas</title>
+</head>
+<body>
+
+   
+    <div class="container">
+        <h1>Lista de Cumpleaños</h1>
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="escribe un nombre">
+            <button onclick="agregarNombre()">Agregar</button>
+          
+        </div>
+        <ul id="listaNombres"></ul>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
